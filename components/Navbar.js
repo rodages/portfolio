@@ -1,6 +1,6 @@
 import { Link, animateScroll as scroll } from 'react-scroll'
 
-const sections = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
+const sections = ['About', 'Skills', 'Projects', 'Experience', 'Interests', 'Contact']
 
 function Navbar(){
     return (
@@ -15,9 +15,9 @@ function Navbar(){
             </div>
             <div
                 className='nav-sections flex-1 flex justify-between' >
-                {sections.map(section=>{
+                {sections.map((section,i)=>{
                     const sectionNameLowercased = section.toLowerCase()
-                    return <div>
+                    return <div key={i}>
                         <Link 
                             className={`links ${sectionNameLowercased}`}
                             activeClass={`${sectionNameLowercased}-active active`}
