@@ -25,6 +25,7 @@ function Projects(){
                                         }</h4>
                                 })}
                             </div>
+
                             <h5>github:{project.github} | link to project:{project.deployedLink}</h5>
                         </div>
                        
