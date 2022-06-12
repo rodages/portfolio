@@ -83,7 +83,7 @@ const data = {
             company:'Hornblower - City Cruises UK',
             year:'Jan 2019 - Present',
             // companyLink:'link',
-            description:'description',
+            description:'Responsible for managing the operations, logistics and administrating of the Food and Beverage department. The role allowed me to learn the importance of planning, prioritising, delegation, budgeting, communicating and collaborating with other departments. While learning to code I have also made a few scripts to optimize my work and save time.',
             image:'logoCC'
         },
         {
@@ -91,7 +91,7 @@ const data = {
             company:'Hornblower - City Cruises UK',
             year:'May 2016 - Jan 2019',
             // companyLink:'link',
-            description:'description',
+            description:'Responsible for running the events and managing a team of up to 14 Front of House staff. I was able able to get valuable customer service experience, complaint handling and team management to deliver great products and experience. Throughout my employment, I have been trusted with running the largest and most important events, mentored four team members to get promoted to supervisors and written documentation for the till use and running core product as an attempt to improve training needs within our department.',
             image:'logoCC'
         },
         {
@@ -99,7 +99,7 @@ const data = {
             company:'Middlesex University',
             year:'October 2013 - May 2016',
             // companyLink:'link',
-            description:'description',
+            description:'Graduated with a 2:1 in BSc Psychology. The course has emphasized Research Methods and Data Analysis throughout the whole degree and covered various different approaches to counceling. This helped me to improve my academic writing, working with big data sets and carry out research. In particular I was very interested in modules of Positive psychology and Coaching that have helped a lot whilst working in management roles later in my career.',
             image:'logoMiddlesex'
         },
     ],

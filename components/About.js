@@ -9,7 +9,7 @@ const paragraph = ''
 
 function About(){
     return(
-        <section id='about' className="container mx-auto text-center mt-6">
+        <section id='about' className="container mx-auto text-center mt-16 pt-5">
             {makeHeadlineTag("About Me")}
             <article className="mt-4">
                 <h3 style={styles.headline} className={`${header} mb-1`} >Personal Profile</h3>
@@ -25,10 +25,10 @@ Recently I have graduated from Software Engineering Immersive Bootcamp at Genera
 
                 </p>
             </article>
-            <div className="md:flex">
+            <div className="md:flex  justify-center" >
 
-                <article>
-                    <h3 style={styles.headline} className={`${header} mt-4 mb-2`}>Further Learning</h3>
+                <article className="mx-4">
+                    <h3 style={styles.headline} className={`${header} mt-12 mb-2`}>Further Learning</h3>
                     <div>
                     <div style={styles.subheader}>
                         <p>The learning does not stop after graduating from General Assembly!
@@ -50,8 +50,8 @@ Recently I have graduated from Software Engineering Immersive Bootcamp at Genera
                     </div>
                 </article>
 
-                <article>
-                    <h3 style={styles.headline} className={`${header} mt-4 mb-2`}>Interests</h3>
+                <article className="mx-4">
+                    <h3 style={styles.headline} className={`${header} mt-12 mb-2`}>Interests</h3>
 
                     {data.about.interests.map((activity,i)=>{
                         return(

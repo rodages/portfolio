@@ -7,7 +7,7 @@ import styles from '../reusableFuncs/styles'
 
 function Skills(){
     return(
-        <div id='skills' className='container mx-auto text-center mt-6'>
+        <div id='skills' className='container mx-auto text-center mt-16 pt-4'>
             {makeHeadlineTag("Skills")}
             <Fade duration={2000}>
                 <Technologies headline={'Frontend'} technologiesArr={data.skills.frontend}/>
