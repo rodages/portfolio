@@ -11,7 +11,7 @@ function Hero(){
                 </div>
             </Fade>
             <Fade duration={2000} delay={500}>
-                <div className='flex flex-col text-center font-bold sm:text-xl  md:text-3xl lg:text-5xl'>
+                <div className='flex flex-col text-center font-bold sm:text-3xl  md:text-5xl lg:text-6xl'>
                     <h1 className='mb-4'>Zan Makarov</h1>
                     <h1>Junior Full-Stack Software Engineer</h1>
                 </div>

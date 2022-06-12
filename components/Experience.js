@@ -9,7 +9,7 @@ function Experience(){
                 {makeHeadlineTag("Experience")}
                 {data.experience.map((workplace,i)=>{
                     return (
-                        <div key={i} className='flex'>
+                        <div key={i} className='flex justify-center'>
                             <div style={{  width: '300px', height: '225px'}} className='relative'>
                                 <Image layout={'fill'} objectFit={'contain'} alt={`${workplace.company} logo`}  src={`/${workplace.image}.png`} />
                             </div>

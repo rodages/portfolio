@@ -8,22 +8,33 @@ import makeHeadlineTag from "../reusableFuncs/makeHeadlineTag"
 function Projects(){
 
     return(
-        <div id='projects' style={{border:'1px solid yellow'}} className='container mx-auto projects'>
+        <div id='projects' className='container mx-auto projects'>
             <div className='inner-container'>
             {makeHeadlineTag("Projects")}
                 {data.projects.map((project,i)=>{
                     return (
-                        <div key={i}>
-                            <div style={{  width: '900px', height: '900px'}} className='relative'>
+                        <div className='flex flex-col items-center' key={i}>
+                            <h2 className='text-2xl font-bold mt-6 -mb-12'>{project.name}</h2>
+                            <div style={{  width: '1200px', height: '600px'}} className='relative'>
                                 <Image layout={'fill'} objectFit={'contain'} alt={`${project.key}`}  src={`/${project.key}.png`} />
                             </div>
-                            <h2>{project.name}</h2>
-                            <h3>{project.setup} Project | {project.timeframe}</h3>
+                            <h3 className='font-bold -mt-16'>{project.setup} Project | {project.timeframe}</h3>
                             <p>{project.description}</p>
                                 <Technologies headline={'Technologies used'} technologiesArr={project.technologies}/>
-                            <h5>github:{project.github} | link to project:{project.deployedLink}</h5>
+                                <div className='flex '>
+                                    <a 
+                                    a target="_blank" href={`${project.github}`} rel="noreferrer"
+                                    className="mr-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                        Github Repo
+                                    </a>
+
+                                    <a 
+                                    a target="_blank" href={`${project.deployedLink}`} rel="noreferrer"
+                                    className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                        View Online
+                                    </a>
+                                </div>
                         </div>
-                       
                     )
                 })}
             </div>

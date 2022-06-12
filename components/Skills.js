@@ -6,7 +6,7 @@ import makeHeadlineTag from "../reusableFuncs/makeHeadlineTag"
 
 function Skills(){
     return(
-        <div id='skills' >
+        <div id='skills' className='container mx-auto skills-container'>
             {makeHeadlineTag("Skills")}
             <Fade duration={2000}>
                 <Technologies headline={'Frontend'} technologiesArr={data.skills.frontend}/>

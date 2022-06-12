@@ -40,7 +40,7 @@ function Contact(){
         </a>
 
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center font-bold">
                 <p> &copy; Zan Makarov {date.getFullYear()}</p>
             </div>
         
