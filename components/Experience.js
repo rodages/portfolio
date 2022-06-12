@@ -1,15 +1,15 @@
 import data from '../data/data'
 import Image from 'next/image'
-
+import makeHeadlineTag from "../reusableFuncs/makeHeadlineTag"
 
 function Experience(){
     return(
-        <div style={{minHeight:'50vh', border:'1px solid green'}} className='container mx-auto experience'>
+        <div id="experience" style={{minHeight:'50vh', border:'1px solid green'}} className='container mx-auto experience'>
             <div className='inner-container'>
-                <h1>Experience</h1>
+                {makeHeadlineTag("Experience")}
                 {data.experience.map((workplace,i)=>{
                     return (
-                        <div className='flex'>
+                        <div key={i} className='flex'>
                             <div style={{  width: '300px', height: '225px'}} className='relative'>
                                 <Image layout={'fill'} objectFit={'contain'} alt={`${workplace.company} logo`}  src={`/${workplace.image}.png`} />
                             </div>

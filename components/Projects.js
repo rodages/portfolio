@@ -2,30 +2,25 @@ import data from '../data/data'
 import skills from '../data/skills'
 import Image from 'next/image'
 
+import Technologies from './Technologies'
+import makeHeadlineTag from "../reusableFuncs/makeHeadlineTag"
+
 function Projects(){
 
     return(
-        <div style={{minHeight:'50vh', border:'1px solid yellow'}} className='container mx-auto projects'>
+        <div id='projects' style={{border:'1px solid yellow'}} className='container mx-auto projects'>
             <div className='inner-container'>
-                <h1>Projects</h1>
+            {makeHeadlineTag("Projects")}
                 {data.projects.map((project,i)=>{
-                    console.log(project)
                     return (
-                        <div>
+                        <div key={i}>
                             <div style={{  width: '900px', height: '900px'}} className='relative'>
                                 <Image layout={'fill'} objectFit={'contain'} alt={`${project.key}`}  src={`/${project.key}.png`} />
                             </div>
                             <h2>{project.name}</h2>
                             <h3>{project.setup} Project | {project.timeframe}</h3>
                             <p>{project.description}</p>
-                            <div className='flex'>
-                                {project.technologies.map((technology,i)=>{
-                                    return <h4 key={i}>{
-                                        <img style={{height:'40px', width:'40px'}} alt={technology} src={skills[technology]} />
-                                        }</h4>
-                                })}
-                            </div>
-
+                                <Technologies headline={'Technologies used'} technologiesArr={project.technologies}/>
                             <h5>github:{project.github} | link to project:{project.deployedLink}</h5>
                         </div>
                        

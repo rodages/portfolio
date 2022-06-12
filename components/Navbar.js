@@ -1,10 +1,10 @@
 import { Link, animateScroll as scroll } from 'react-scroll'
 
-const sections = ['About', 'Skills', 'Projects', 'Experience', 'Interests', 'Contact']
+const sections = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
 function Navbar(){
     return (
-        <nav className='nav flex mx-3 justify-between'>
+        <nav style={{backgroundColor:'grey'}} className='nav flex mx-3 justify-between sticky top-0 z-50'>
             <div
                 className='logo mr-12'
                 title="Zan Makarov"
