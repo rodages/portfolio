@@ -6,7 +6,7 @@ function Hero(){
     return(
         <div id='hero' className='container mx-auto h-screen hero-container flex flex-col justify-center'>
             <Fade duration={2000} delay={100}>
-                <div  className='flex justify-center relative mb-8' style={{  minWidth:'50px',  minHeight:'700px', }}>
+                <div  className='flex justify-center relative mb-8' style={{  minWidth:'50px',  minHeight:'600px', }}>
                     <Image  className='rounded-full ' layout={'fill'} objectFit={'contain'} alt="profile picture"  src={`/profile.png`} />
                 </div>
             </Fade>
