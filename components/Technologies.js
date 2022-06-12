@@ -4,7 +4,7 @@ import styles from '../reusableFuncs/styles'
 function Technologies({headline, technologiesArr}){
     return (
         <div className='flex flex-col mt-2'>
-        <h1 style={styles.header} className='font-bold text-center mb-1'>{headline}</h1>
+        <h1 style={styles.headline} className='font-bold text-center mb-1'>{headline}</h1>
             <div className='flex flex-wrap justify-center'>
                 {technologiesArr.map((skill,i)=>{
                     return(

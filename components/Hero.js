@@ -5,9 +5,9 @@ import styles from '../reusableFuncs/styles'
 
 function Hero(){
     return(
-        <div id='hero' className='container mx-auto h-screen hero-container flex flex-col justify-center'>
+        <div id='hero' className='container mx-auto h-screen hero-container flex flex-col justify-center -mt-16'>
             <Fade duration={2000} delay={100}>
-                <div  className='flex justify-center relative mb-8' style={{  minWidth:'50px',  minHeight:'400px', }}>
+                <div  className='flex justify-center relative mb-8' style={{  minWidth:'50px',  minHeight:'300px', }}>
                     <Image  className='rounded-full ' layout={'fill'} objectFit={'contain'} alt="profile picture"  src={`/profile.png`} />
                 </div>
             </Fade>

@@ -4,16 +4,16 @@ const sections = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
 function Navbar(){
     return (
-        <nav style={{backgroundColor:'#1a405f', color:'#fcfcfa'}} className='nav w-screen flex pl-3 pr-10 md:justify-between sticky top-0 z-50'>
+        <nav style={{backgroundColor:'#1a405f', color:'#fcfcfa', height:'40px'}} className='nav w-screen flex pl-2 md:justify-between sticky top-0 z-50 md:text-lg items-center'>
             <div
-                className='logo mr-12'
+                className='logo mr-2'
                 title="Zan Makarov"
                 onClick={()=> scroll.scrollToTop()}
             >
-                <p>ZM</p>
+                &lt;ZM/&gt;
             </div>
             <div
-                className='nav-sections flex-1 flex justify-between' >
+                className='nav-sections flex-1 flex justify-around' >
                 {sections.map((section,i)=>{
                     const sectionNameLowercased = section.toLowerCase()
                     return <div key={i}>

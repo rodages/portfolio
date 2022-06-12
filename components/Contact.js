@@ -2,6 +2,7 @@ import Fade from 'react-reveal/Fade'
 
 import Image from 'next/image'
 import makeHeadlineTag from "../reusableFuncs/makeHeadlineTag"
+import styles from '../reusableFuncs/styles'
 
 
 function Contact(){
@@ -16,7 +17,7 @@ function Contact(){
                 <Fade duration={2000} >
                     <div className="email flex items-center" >
                         <Image height='40px' width='40px' alt="Email Me" title="Email Me" src="/mailSVG.svg" />
-                        <p className="ml-1"> Email</p>
+                        <p style={styles.headline} className="ml-1"> Email</p>
                     </div>
                 </Fade>
                 </a>
@@ -25,7 +26,7 @@ function Contact(){
                 <Fade duration={2000} delay={300} >
                     <div className="linkdin flex items-center">
                         <img style={{height:'40px', width:'40px'}} alt="LinkedIn" title="LinkedIn" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/linkedin/linkedin-original.svg" />
-                        <p className="ml-1"> LinkedIn</p>
+                        <p style={styles.headline} className="ml-1"> LinkedIn</p>
                     </div>
                 </Fade>
                 </a>
@@ -34,14 +35,14 @@ function Contact(){
                 <Fade duration={2000} delay={600} >
                     <div className="github flex items-center">
                     <img style={{height:'40px', width:'40px'}} alt="GitHub" title="GitHub" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/github/github-original.svg" />
-                    <p className="ml-1"> GitHub</p>
+                    <p style={styles.headline} className="ml-1"> GitHub</p>
                     </div>
                 </Fade>
         </a>
 
             </div>
             <div className="flex justify-center font-bold">
-                <p> &copy; Zan Makarov {date.getFullYear()}</p>
+                <p style={styles.headline}> &copy; Zan Makarov {date.getFullYear()}</p>
             </div>
         
         </div>
