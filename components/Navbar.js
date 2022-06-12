@@ -4,14 +4,13 @@ const sections = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
 function Navbar(){
     return (
-        <nav style={{backgroundColor:'grey'}} className='nav w-screen flex mx-3 justify-between sticky top-0 z-50'>
+        <nav style={{backgroundColor:'#1a405f', color:'#fcfcfa'}} className='nav w-screen flex pl-3 pr-10 md:justify-between sticky top-0 z-50'>
             <div
                 className='logo mr-12'
                 title="Zan Makarov"
                 onClick={()=> scroll.scrollToTop()}
-                //image
             >
-                ZM
+                <p>ZM</p>
             </div>
             <div
                 className='nav-sections flex-1 flex justify-between' >

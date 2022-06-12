@@ -3,10 +3,11 @@ import skills from '../data/skills'
 import Fade from 'react-reveal/Fade'
 import Technologies from './Technologies'
 import makeHeadlineTag from "../reusableFuncs/makeHeadlineTag"
+import styles from '../reusableFuncs/styles'
 
 function Skills(){
     return(
-        <div id='skills' className='container mx-auto skills-container'>
+        <div id='skills' className='container mx-auto text-center mt-6'>
             {makeHeadlineTag("Skills")}
             <Fade duration={2000}>
                 <Technologies headline={'Frontend'} technologiesArr={data.skills.frontend}/>

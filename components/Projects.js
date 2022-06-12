@@ -14,12 +14,12 @@ function Projects(){
                 {data.projects.map((project,i)=>{
                     return (
                         <div className='flex flex-col items-center' key={i}>
-                            <h2 className='text-2xl font-bold mt-6 -mb-12'>{project.name}</h2>
-                            <div style={{  width: '1200px', height: '600px'}} className='relative'>
+                            <h2 className='text-2xl font-bold mt-6  '>{project.name}</h2>
+                            <h3 className='font-bold mt-2 -mb-12'>{project.setup} Project | {project.timeframe}</h3>
+                            <div style={{ width: '100%', height: '600px'}} className='relative h-200 md:h-600'>
                                 <Image layout={'fill'} objectFit={'contain'} alt={`${project.key}`}  src={`/${project.key}.png`} />
                             </div>
-                            <h3 className='font-bold -mt-16'>{project.setup} Project | {project.timeframe}</h3>
-                            <p>{project.description}</p>
+                            <p className='-mt-16'>{project.description}</p>
                                 <Technologies headline={'Technologies used'} technologiesArr={project.technologies}/>
                                 <div className='flex '>
                                     <a 

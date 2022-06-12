@@ -18,11 +18,12 @@ function MyApp({ Component, pageProps }) {
     <>
       <Navbar />
       <Hero />
-      <About />
+      <About {...pageProps} />
       <Skills />
       <Projects />
       <Experience />
       <Contact />
+
     </>
 
   )
