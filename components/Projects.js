@@ -22,7 +22,7 @@ function Projects(){
                                 <div style={{ width: '100%', height: '600px'}} className='relative -mt-16 -mb-16 md:mb-1'>
                                     <Image layout={'fill'} objectFit={'contain'} alt={`${project.key}`}  src={`/${project.key}.png`} />
                                 </div>
-                                <p style={styles.subheader} className='-mt-16 w-4/5 -mt-12 mb-4 md:w-4/5'>{project.description}</p>
+                                <p style={styles.subheader} className='text-center -mt-16 w-4/5 -mt-12 mb-4 md:w-4/5'>{project.description}</p>
                                     <Technologies headline={'Technologies used'} technologiesArr={project.technologies}/>
                                     <div className='flex mt-4 '>
                                         <a 
