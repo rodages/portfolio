@@ -38,7 +38,7 @@ function About(){
                         <div style={styles.subheader}>
                             <p>The learning does not stop after graduating from General Assembly!
 
-                            I am currently learning more about Data Structures and Algorythms.
+                            I am currently learning more about Data Structures and Algorithms.
 
                             In regards to Technologies -  I am interested in learning more about the following:
                             </p>

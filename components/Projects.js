@@ -15,8 +15,8 @@ function Projects(){
             {makeHeadlineTag("Projects")}
                 {data.projects.map((project,i)=>{
                     return (
-                        <Fade duration={2000} >
                             <div className='flex flex-col items-center' key={i}>
+                            <Fade duration={2000} >
                                 <h2 style={styles.headline} className='text-2xl font-bold mt-6  '>{project.name}</h2>
                                 <h3 style={styles.headline} className='font-bold mt-2 -mb-16 md:mb-1 '>{project.setup} Project | {project.timeframe}</h3>
                                 <div style={{ width: '100%', height: '600px'}} className='relative -mt-16 -mb-16 md:mb-1'>
@@ -37,8 +37,8 @@ function Projects(){
                                             View Online
                                         </a>
                                     </div>
+                            </Fade>
                             </div>
-                        </Fade>
                     )
                 })}
             </div>
