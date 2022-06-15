@@ -6,7 +6,7 @@ function Navbar(){
     return (
         <nav style={{backgroundColor:'#1a405f', color:'#fcfcfa', height:'40px'}} className='nav w-screen flex pl-2 md:justify-between sticky top-0 z-50 md:text-lg items-center'>
             <div
-                className='logo mr-2'
+                className='logo hover:cursor-pointer hover:text-lightBlue mr-2'
                 title="Zan Makarov"
                 onClick={()=> scroll.scrollToTop()}
             >
@@ -18,7 +18,7 @@ function Navbar(){
                     const sectionNameLowercased = section.toLowerCase()
                     return <div key={i}>
                         <Link 
-                            className={`links ${sectionNameLowercased}`}
+                            className={`links hover:cursor-pointer hover:text-lightBlue ${sectionNameLowercased}`}
                             activeClass={`${sectionNameLowercased}-active active`}
                             to={`${sectionNameLowercased}`}
                             spy={true}

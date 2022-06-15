@@ -24,16 +24,16 @@ function Projects(){
                                 </div>
                                 <p style={styles.subheader} className='text-center -mt-16 w-4/5 -mt-12 mb-4 md:w-4/5'>{project.description}</p>
                                     <Technologies headline={'Technologies used'} technologiesArr={project.technologies}/>
-                                    <div className='flex mt-4 '>
+                                    <div className='flex mt-4 z-10'>
                                         <a 
                                         a target="_blank" href={`${project.github}`} rel="noreferrer"
-                                        className="mr-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                        className="mr-4 bg-transparent hover:bg-darkBlue text-darkBlue font-semibold hover:text-warmWhite py-2 px-4 border border-darkBlue hover:border-transparent rounded">
                                             Github Repo
                                         </a>
 
                                         <a 
                                         a target="_blank" href={`${project.deployedLink}`} rel="noreferrer"
-                                        className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                        className="mr-4 bg-transparent hover:bg-darkBlue text-darkBlue font-semibold hover:text-warmWhite py-2 px-4 border border-darkBlue hover:border-transparent rounded">
                                             View Online
                                         </a>
                                     </div>

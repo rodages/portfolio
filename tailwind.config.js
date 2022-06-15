@@ -4,7 +4,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        darkBlue: "#2f496e",
+        warmWhite: "#fcfcfa",
+        lightBlue:'#337bae'
+      }
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
